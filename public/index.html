@@ -9,7 +9,7 @@
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-	<link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+	<link rel="manifest" href="%PUBLIC_URL%/asset-manifest.json">
 	<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
 	<!--
       Notice the use of %PUBLIC_URL% in the tags above.
@@ -23,7 +23,26 @@
 	<title>React App</title>
 </head>
 
-<body>
+<body onload="ready()">
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '207926346628622',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.12'
+    });
+  };
+
+  (function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+</script>
 	<noscript>
 		You need to enable JavaScript to run this app.
 	</noscript>
@@ -38,6 +57,20 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+<script>
+	function ready () {
+
+	  FB.api(
+	  "/131747784205298/ratings",
+	  function (response) {
+		if (response && !response.error) {
+		  /* handle the result */
+		  debugger;
+		}
+	  });
+	};
+</script>
 </body>
 
 </html>
