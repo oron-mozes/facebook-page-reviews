@@ -27,22 +27,22 @@
 
 <div id="fb-root"></div>
 <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId            : '164333704364810',
-      autoLogAppEvents : true,
-      xfbml            : true,
-      version          : 'v2.12'
-    });
-  };
-
-  (function(d, s, id){
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) {return;}
-    js = d.createElement(s); js.id = id;
-    js.src = "https://connect.facebook.net/en_US/sdk.js";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
+//  window.fbAsyncInit = function() {
+//    FB.init({
+//      appId            : '164333704364810',
+//      autoLogAppEvents : true,
+//      xfbml            : true,
+//      version          : 'v2.12'
+//    });
+//  };
+//
+//  (function(d, s, id){
+//    var js, fjs = d.getElementsByTagName(s)[0];
+//    if (d.getElementById(id)) {return;}
+//    js = d.createElement(s); js.id = id;
+//    js.src = "https://connect.facebook.net/en_US/sdk.js";
+//    fjs.parentNode.insertBefore(js, fjs);
+//  }(document, 'script', 'facebook-jssdk'));
 
 </script>
 	<noscript>
@@ -61,16 +61,17 @@
     -->
 
 <script>
-	function ready () {
-		  FB.api(
-		  "/164333704364810/ratings?access_token=EAACEdEose0cBAKTG8chd7WHSNK4LdDOBrrZCYHrfghUkEH6AN75Y7l9tDvVILdvG1Hw3mDNMWaMZAdVkBXrJrMCZC4gCTavvpqV6GhV3GvI8pUam7esi3y3CVzbXvwCLNs42nN4jjeJL9CBe2Dv18LD6Bavu0kSKibHJDYmqZAq8ZC1EmzlRFDYqsNKBUWpcZD",
-		  function (response) {
-			if (response && !response.error) {
-				window.__reviews_data = response;
-			}
-		  });
-	}
+//	function ready () {
+//		  FB.api(
+//		  "/164333704364810/ratings?access_token=EAACEdEose0cBAKTG8chd7WHSNK4LdDOBrrZCYHrfghUkEH6AN75Y7l9tDvVILdvG1Hw3mDNMWaMZAdVkBXrJrMCZC4gCTavvpqV6GhV3GvI8pUam7esi3y3CVzbXvwCLNs42nN4jjeJL9CBe2Dv18LD6Bavu0kSKibHJDYmqZAq8ZC1EmzlRFDYqsNKBUWpcZD",
+//		  function (response) {
+//			if (response && !response.error) {
+//				window.__reviews_data = response;
+//			}
+//		  });
+//	}
 </script>
+<script type="text/javascript" src="//static.parastorage.com/services/js-sdk/1.94.0/js/wix.min.js"></script>
 </body>
 
 </html>
