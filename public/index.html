@@ -62,11 +62,10 @@
 	function ready () {
 
 	  FB.api(
-	  "/131747784205298/ratings",
+	  "/164333704364810/ratings?fields=EAACEdEose0cBAOETBEyApvVNMwesEf3yGtB7d1pzllsZCZCIZBP7qvwLTZBsAT6zbBiPYwdT7fpe83skzKqjHwpqA76cNOdZAfrWhwu97QdjZBZCEQKxb5fmVNdpjWCYfvga5BxZCnaxSdCtdAuh7q87Ab5JcwNcgU0LZCDqRkzguwqpd2qvuBtKr11cdsAmT4VEZD",
 	  function (response) {
 		if (response && !response.error) {
-		  /* handle the result */
-		  debugger;
+			console.log(response)
 		}
 	  });
 	};
