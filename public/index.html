@@ -65,10 +65,10 @@
 	  "/164333704364810/ratings?fields=EAACEdEose0cBAKTG8chd7WHSNK4LdDOBrrZCYHrfghUkEH6AN75Y7l9tDvVILdvG1Hw3mDNMWaMZAdVkBXrJrMCZC4gCTavvpqV6GhV3GvI8pUam7esi3y3CVzbXvwCLNs42nN4jjeJL9CBe2Dv18LD6Bavu0kSKibHJDYmqZAq8ZC1EmzlRFDYqsNKBUWpcZD",
 	  function (response) {
 		if (response && !response.error) {
-			console.log(response)
+			window.__reviews_data = response;
 		}
 	  });
-	};
+	}
 </script>
 </body>
 
